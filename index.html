@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-Control - купить оборудование для майнинга.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    .offcanvas {
+      transition: transform 0.5s ease-in-out;
+      background-color: #212529;
+    }
+
+    .offcanvas-start {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      border-right: 0px;
+      transform: translateX(-100%);
+    }
+
+    .navbar-brand {
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-right: 0px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .row>* {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header id="header" class="sticky-top" style="transition: top 0.4s;">
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark bg-dark scrolling-navbar">
+      <div class="container-fluid row">
+
+        <div class="col-3 d-md-none d-lg-none d-xl-none d-xxl-none">
+          <a class="btn btn-dark bg-dark" data-bs-toggle="offcanvas" data-bs-target="#navContent" aria-controls="navContent">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+        </div>
+
+
+        <ul class="navbar-nav collapse navbar-collapse pe-0 col-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navDrop">
+              <li><a href="" class="dropdown-item">Bitman</a></li>
+              <li><a href="" class="dropdown-item">Innosilicon</a></li>
+              <li><a href="" class="dropdown-item">Ebang</a></li>
+              <li><a href="" class="dropdown-item">Имерсионное охлаждение</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+
+
+        <a href="#" class="navbar-brand mr-0 text-center col-3">IT-Control</a>
+
+        atom://teletype/portal/8cf2b553-af3a-4a99-b5b9-974c8c82f8b3
+        <ul class="navbar-nav collapse navbar-collapse col-3 justify-content-end m-0 p-0">
+          <form action="#" class="d-flex justify-content-end">
+            <input type="search" placeholder="Поиск" class="form-control">
+          </form>
+        </ul>
+        <a class="col-3 btn btn-dark bg-dark d-md-none d-lg-none d-xl-none d-xxl-none" data-bs-toggle="offcanvas" data-bs-target="#navContent" aria-controls="navContent"></a>
+
+
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="navContent" aria-labelledby="navContentLabel">
+    <div class="offcanvas-header container-fluid">
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      <a class="btn-close btn-close-white text-reset col-4" data-bs-dismiss="offcanvas" aria-label="Закрыть"></a>
+    </div>
+    <div class="offcanvas-body flex-column">
+      <ul class="navbar-nav navbar-collapse pe-0">
+        <a href="#" class="text-decoration-none text-light text-left">Home</a>
+        <li class="nav-item dropdown">
+          <a href="#" class="text-decoration-none text-light dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navDrop">
+            <a href="" class="dropdown-item text-light">Bitman</a>
+            <a href="" class="dropdown-item text-light">Innosilicon</a>
+            <a href="" class="dropdown-item text-light">Ebang</a>
+            <a href="" class="dropdown-item text-light">Имерсионное охлаждение</a>
+          </ul>
+        </li>
+        <a href="#" class="text-decoration-none text-light">Contacts</a>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+      } else {
+        document.getElementById("header").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
